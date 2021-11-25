@@ -69,10 +69,10 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 			<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
 				<div class="d-flex justify-content-center align-items-center h-100">
 					<div class="text-white">
-						<h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-						<h5 class="mb-4">Best & free guide of responsive web design</h5>
-						<a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" rel="nofollow" target="_blank">Start tutorial</a>
-						<a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank" role="button">Download MDB UI KIT</a>
+						<h1 class="mb-3">Inventory System</h1>
+						<h5 class="mb-4">Add your product now</h5>
+						<a class="btn btn-outline-light btn-lg m-2" href="#add-product" role="button" rel="nofollow">Start adding</a>
+
 					</div>
 				</div>
 			</div>
@@ -88,7 +88,7 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 				<p class="text-center"> Jhoebert Huenda - Advanced Database Systems </p>
 			</div>
 			<button type="button" class="btn btn-success mt-3 ms-3 p-3" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-				<i class="fas fa-plus"></i> Add Product
+				<i class="fas fa-plus" id="add-product"></i> Add Product
 			</button>
 			<div class="row mt-3">
 				<!-- Button trigger modal -->
