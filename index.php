@@ -70,7 +70,7 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 				<div class="d-flex justify-content-center align-items-center h-100">
 					<div class="text-white">
 						<h1 class="mb-3">Inventory System</h1>
-						<h5 class="mb-4">Add your product now</h5>
+						<h5 class="mb-4">Add your precious product now</h5>
 						<a class="btn btn-outline-light btn-lg m-2" href="#add-product" role="button" rel="nofollow">Start adding</a>
 
 					</div>
