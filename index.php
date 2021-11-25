@@ -55,7 +55,7 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 						</li>
 
 						<li class="nav-item">
-							<a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+							<a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/Huends-Jhoebert/crud-inventory-system" role="button" target="_blank"><i class="fab fa-github"></i></a>
 
 						</li>
 					</ul>
