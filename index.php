@@ -27,43 +27,60 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 <body class="bg-white">
 
 	<header>
-		<!-- Navbar -->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-			<!-- Container wrapper -->
-			<div class="container">
-				<!-- Navbar brand -->
-				<a class="navbar-brand me-2">
-					<img src="images/ccs_logo.png" height="55" alt="" loading="lazy" style="margin-top: -1px;" />
-				</a>
+		<!-- Intro settings -->
+		<style>
+			/* Default height for small devices */
+			#intro-example {
+				height: 400px;
+			}
 
-				<!-- Toggle button -->
-				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+			/* Height for devices larger than 992px */
+			@media (min-width: 992px) {
+				#intro-example {
+					height: 600px;
+				}
+			}
+		</style>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-bars"></i>
 				</button>
-
-				<!-- Collapsible wrapper -->
-				<div class="collapse navbar-collapse" id="navbarButtonsExample">
-					<!-- Left links -->
+				<div class="collapse navbar-collapse" id="navbarExample01">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" aria-current="page" href="#">Home</a>
+						</li>
+
 						<li class="nav-item">
-							<a class="nav-link" href="#">Jhoebert Huenda</a>
+							<a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+
 						</li>
 					</ul>
-					<!-- Left links -->
-
-					<div class="d-flex align-items-center">
-						<a class="btn btn-dark px-3 me-5" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-github"></i></a>
-
-					</div>
 				</div>
-				<!-- Collapsible wrapper -->
 			</div>
-			<!-- Container wrapper -->
 		</nav>
 		<!-- Navbar -->
+
+		<!-- Background image -->
+		<div id="intro-example" class="p-5 text-center bg-image" style="background-image: url('images/logistics.svg');">
+			<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+				<div class="d-flex justify-content-center align-items-center h-100">
+					<div class="text-white">
+						<h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+						<h5 class="mb-4">Best & free guide of responsive web design</h5>
+						<a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" rel="nofollow" target="_blank">Start tutorial</a>
+						<a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank" role="button">Download MDB UI KIT</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Background image -->
 	</header>
 
-	<main>
+	<main class="pb-5">
 		<div class="container p-0 bg-light shadow-3-strong mt-5">
 			<div class="bg-info p-3 __container">
 				<h1 class="text-center p-3 pb-0">INVENTORY SYSTEM</h1>
