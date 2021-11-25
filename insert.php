@@ -8,7 +8,7 @@ $sql = "INSERT INTO products (product_name, product_price, product_category)
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
-	header("Location: index.php");
+	header("Location: index.php?id=add-product#add-product");
 } else {
 	echo mysqli_error($conn);
 }
