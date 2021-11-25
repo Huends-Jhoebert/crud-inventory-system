@@ -1,12 +1,8 @@
 <?php
 
-//connect to the database
 $conn = mysqli_connect("localhost", "root", "", "inventory_db");
-//sql query
 $sql = "SELECT * FROM products";
-//query results from the database
 $result = mysqli_query($conn, $sql);
-//fetch all the datas into an association array 
 $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
@@ -63,9 +59,6 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 									<td><?php echo "₱ " . $product['product_price']; ?></td>
 									<td><?php echo $product['product_category']; ?></td>
 									<td>
-										<button type="button" class="btn btn-primary btn-sm px-3">
-											<i class="fas fa-pen-alt"></i>
-										</button>
 										<form style="display: inline-block;" action="delete.php" method="post">
 											<input type="hidden" name="product_id" value="<?php echo $product['product_id']; ?>">
 											<button type="submit" class="btn btn-danger btn-sm px-3">
