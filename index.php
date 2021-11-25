@@ -21,6 +21,8 @@ $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 	<title>Inventory-System</title>
 </head>
 
